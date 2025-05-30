@@ -37,5 +37,41 @@ document.querySelectorAll('.faq-question').forEach(button => {
 function downloadApp() {
   alert("Redirecting to download...");
 }
+document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.testimonials-track');
+            const wrapper = document.querySelector('.testimonials-wrapper');
+            const cards = document.querySelectorAll('.testimonial-card');
+            
+            // Duplicate cards to create seamless loop
+            cards.forEach(card => {
+                const clone = card.cloneNode(true);
+                track.appendChild(clone);
+            });
+            
+            // Animation variables
+            let animationId;
+            let speed = 0.5; // pixels per frame
+            let direction = -1; // -1 for left, 1 for right
+            let position = 0;
+            const cardWidth = cards[0].offsetWidth + 30; // width + gap
+            
+            // Start animation
+            function animate() {
+                position += speed * direction;
+                
+                // Reset position when we've scrolled one set of cards
+                if (direction === -1 && position < -cardWidth * cards.length) {
+                    position = 0;
+                } else if (direction === 1 && position > 0) {
+                    position = -cardWidth * cards.length;
+                }
+                
+                track.style.transform = `translateX(${position}px)`;
+                animationId = requestAnimationFrame(animate);
+            }
+            
+            // Start the animation
+            animate();
+        });
 
 

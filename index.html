@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="mindspace-container">
     <header class="navbar">
         <div class="logo">🧠 MindSpace</div>
         <nav class="nav-links">
@@ -192,30 +193,40 @@
             </div>
         </section>
               <!-- Client Feedback Section -->
-        <section class="client-feedback" id="testimonials">
-            <h3>Testimonials</h3>
-            <p>Hear what our clients have to say about us.</p>
-
-            <div class="feedback-wrapper">
-                <div class="testimonial">
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <p>“I didn’t know I could feel this good!”</p>
-                    <span>- Jane Smith, Manager, Company Y</span>
-                </div>
-
-                <div class="testimonial">
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <p>“This service has transformed my life for the better.”</p>
-                    <span>- John Doe, CEO, Company X</span>
-                </div>
-
-                <div class="testimonial">
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <p>“The support I received was amazing.”</p>
-                    <span>- Alice Johnson, Director, Company Z</span>
+   <section class="testimonials-section">
+        <div class="testimonials-container">
+            <div class="testimonials-header">
+                <h2>Testimonials</h2>
+                <p>Hear what our clients have to say about us.</p>
+            </div>
+            
+            <div class="testimonials-wrapper">
+                <div class="testimonials-track">
+                    <!-- Testimonial cards will be duplicated by JavaScript -->
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"I never knew I could feel this good!"</p>
+                        <div class="testimonial-author">Jane Smith</div>
+                        <div class="testimonial-position">Manager, Company Y</div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"This service has transformed my life for the better!"</p>
+                        <div class="testimonial-author">John Doe</div>
+                        <div class="testimonial-position">CEO, Company X</div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"The support I received was a great deal!"</p>
+                        <div class="testimonial-author">Alice Johnson</div>
+                        <div class="testimonial-position">Director, Company Y</div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
         <!-- Gallery Section -->
         <section class="gallery-section" id="gallery">
             <div class="gallery-header">
@@ -324,7 +335,7 @@
             </div>
         </div>
     </footer>
-    
+    </div>
     <script src="scripts/main.js"></script>
 </body>
 
