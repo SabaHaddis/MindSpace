@@ -1,9 +1,7 @@
 /* Scope all styles under .mindspace-wrapper to prevent affecting other parts of the site */
-
-.mindspace-wrapper * {
-  margin: 0;
+*{
+    margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* Basic HTML and body styles */
@@ -11,7 +9,7 @@
   scroll-behavior: smooth;
 }
 .mindspace-wrapper body {
-  font-family: sans-serif;
+  font-family: Inter, sans-serif;
   margin: 0;
 }
 

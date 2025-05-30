@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="mindspace-container">
+    <div class="mindspace-wrapper">
     <header class="navbar">
         <div class="logo">🧠 MindSpace</div>
         <nav class="nav-links">
@@ -31,7 +31,7 @@
                     navigate life's challenges with ease. Join our community to enhance your mental
                     health and well-being.
                 </p>
-                <button onclick="downloadApp()">Download</button>
+                <button href="#cta">Download</button>
             </div>
         </section>
         <!-- Features Section -->
@@ -285,8 +285,8 @@
                 <h2>Ready to Prioritize Your Mental Health?</h2>
                 <p>Download MindSpace today or join our waitlist to be the first to know about new features and updates.
                 </p>
-                <a href="#" class="btn btn-primary">Download on App Store</a>
-                <a href="#" class="btn btn-secondary">Get it on Google Play</a>
+                <a href="#" onclick="downloadApp()" class="btn btn-primary">Download on App Store</a>
+                <a href="#" onclick="downloadApp()" class="btn btn-secondary">Get it on Google Play</a>
                 <form class="waitlist-form">
                     <input type="email" placeholder="Enter your email for waitlist" required>
                     <button type="submit" class="btn btn-tertiary">Join Waitlist</button>
