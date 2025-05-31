@@ -84,7 +84,34 @@
 }
 
 /* Features section */
- .features-section {
+.features-section {
+  background-color: #F5F7FA; /* light gray */
+  padding: 96px 24px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #333333;
+}
+
+.features-heading .label {
+  color: #555555;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.features-heading .main-heading {
+  font-size: 40px;
+  color: #2B2D42;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.features-heading .intro-text {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  font-size: 18px;
+  color: #555555;
+} .features-section {
   background-color: #f9fafe;
   text-align: center;
   padding: 4rem 2rem;
